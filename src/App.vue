@@ -2,7 +2,7 @@
   <div>
     <h1>Reaction Timer Game</h1>
     <button @click="start" :disabled="isPlaying">Play</button>
-    <Block v-if="isPlaying" :delay="delay"></Block>
+    <Block v-if="isPlaying" :delay="delay" @stop="isPlaying = false"></Block>
   </div>
 </template>
 
